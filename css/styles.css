@@ -1,0 +1,220 @@
+.navbar{
+  background-color: #5bc266;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-item {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+.latest-images {
+    position: relative;
+}
+
+.latest-images .main-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.latest-images .secondary-img {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: 40%;
+}
+
+.icon-image {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/*seccion tres*/
+.tecnologias {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  background-image: url('image/seccion3_fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.tecnologias h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.tecnologias p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.tarjeta p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.persona {
+  position: relative;
+  cursor: pointer;
+}
+
+.persona img {
+  width: 70%;
+/*  height: 70%;*/
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.info-persona {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 67%;
+  height: 100%;
+  display: none;
+}
+
+.persona:hover .info-persona {
+  display: block;
+}
+
+.info-persona h3 {
+  font-size: 18px;
+  margin-top: 200px;
+  margin-bottom: 5px;
+}
+
+.info-persona p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: white;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer{
+  background-color: #5bc266;
+}
+
+/* Redes Sociales */
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  height: 40px;
+}
+
+/* Copyright */
+.footer-copyright {
+  font-size: 14px;
+  color: white;
+  background-color: #1B0A3E;
+  height: 40px; 
+  line-height: 2.5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: -25px;
+}
+
+.color-red{
+  color: #F02842;
+}
+
+

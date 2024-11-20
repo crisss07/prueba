@@ -1,27 +1,259 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="es">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demenqui - Mochilas con Energía Renovable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">
+        <img src="image/demenqui.png" alt="Demenuqi" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-baseline">
+          <li class="nav-item px-3"><a class="nav-link text-green" href="index.html">Home</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="productos.html">Productos</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="tecnologia.html">Tecnología</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="contacto.html">Servicio al Cliente</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Slider -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" 
+     data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+  <div class="carousel-inner">
+    <!-- Escena 1 -->
+    <div class="carousel-item active" style="background-image: url('image/slider1.jpg');">
+      <div class="overlay">
+        <div class="carousel-caption text-center text-white">
+          <h1>Mochilas tácticas con energía renovable</h1>
+          <p>Siempre a la par con las mejores tecnologías en favor del medio ambiente</p>
+          <a href="#" class="btn btn-light">Ver más</a>
+        </div>
+      </div>
+    </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Escena 2 -->
+    <div class="carousel-item" style="background-image: url('image/slider2.jpg');">
+      <div class="overlay">
+        <div class="carousel-caption text-center text-white">
+          <h1>Mochilas urbanas y ejecutivas</h1>
+          <p>Adaptamos nuestras mochilas a tu estilo de vida, con elegancia y funcionalidad</p>
+          <a href="#" class="btn btn-light">Conocer más</a>
+        </div>
+      </div>
+    </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+    <!-- Escena 3 -->
+    <div class="carousel-item" style="background-image: url('image/slider3.jpg');">
+      <div class="overlay">
+        <div class="carousel-caption text-center text-white">
+          <h1>Compromiso con el medio ambiente</h1>
+          <p>Nuestras mochilas integran tecnologías renovables para un futuro mejor</p>
+          <a href="#" class="btn btn-light">Descubrir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles del Slider -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+<!-- iconos flotantes -->
+<div class="social-icons">
+    <a href="#"><img src="image/facebook_verde.png" alt="Facebook"></a>
+    <a href="#"><img src="image/x_verde.png" alt="Twitter"></a>
+    <a href="#"><img src="image/whatsapp_verde.png" alt="WhatsApp"></a>
+</div>
+
+  <!-- Productos Destacados -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <div class="latest-images" 
+            data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine">
+            <div >
+              <img src="image/seccion1.jpg" alt="Imagen Principal" class="main-img">
+            </div>
+            <div >
+              <img src="image/seccion2.jpg" alt="Imagen Secundaria" class="secondary-img">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-left" style="margin-top: 10%;"
+          data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine">
+          <h5 class="mt-3">Lo último</h5>
+          <h3 class="mt-3">Mochilas urbanas y ejecutivas</h3>
+          <p>Nos encargamos de adaptar nuestras mochilas a tu vida, con estilo y elegancia.</p>
+          <a href="#" class="btn btn-success">Conocer más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="py-5 bg-light"
+      data-aos="fade-up"
+      data-aos-duration="3000">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="image/carrito_cafe.png" alt="Cotizar" class="icon-image">
+          <h5 class="mt-3">Cotizar</h5>
+          <p>Conoce más acerca de nuestros productos.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="image/persona_cafe.png" alt="Cotizar" class="icon-image">
+          <h5 class="mt-3">Acerca de</h5>
+          <p>Conoce la importancia y uso de nuestras mochilas con energía renovable.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="image/notas_cafe.png" alt="Cotizar" class="icon-image">
+          <h5 class="mt-3">Recordar</h5>
+          <p>Recordar colocar tu pedido más tarde.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de las Tecnologías -->
+  <section class="py-5 tecnologias" data-aos="fade-up"
+                                    data-aos-duration="2000">
+    <div class="container">
+      <h2 class="text-center mb-5">Acerca de la Tecnología</h2>
+      <h3>La empresa Demenqui destaca la implementación de las tecnologías renovables</h3>
+      <div class="row text-center contenedor-tarjetas">
+        <div class="col-md-3 tarjeta">
+          <!-- <img src="panel_solar.jpg" class="img-fluid" alt="Panel Solar"> -->
+          <img src="image/productos/panel.jpg" alt="Panel Solar" class="img-fluid">
+          <h3>Panel Solar</h3>
+          <p>El uso de paneles solares en las mochilas son una gran opción renovable</p>
+          <a href="#" class="btn btn-success">Conocer más</a>
+        </div>
+        <div class="col-md-3 tarjeta">
+          <img src="image/productos/chip.jpg" alt="Chip GPS" class="img-fluid">
+          <h3>Chip GPS</h3>
+          <p>La seguridad tuya y la de tus pertenencias son lo más importante.</p>
+          <a href="#" class="btn btn-success">Conocer más</a>
+        </div>
+        <div class="col-md-3 tarjeta">
+          <img src="image/productos/power_bank.jpg" alt="Power Bank" class="img-fluid">
+          <h3>Power Bank</h3>
+          <p>Estar precavidos para cualquier circunstancia</p>
+          <a href="#" class="btn btn-success">Conocer más</a>
+        </div>
+        <div class="col-md-3 tarjeta">
+          <img src="image/productos/lona.jpg" alt="Lona Impermeable" class="img-fluid">
+          <h3>Lona Impermeable</h3>
+          <p>Que no le pase nada malo a tus pertenencias y objetos tecnológicos</p>
+          <a href="#" class="btn btn-success">Conocer más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="py-5 bg-light" data-aos="zoom-out-right" data-aos-duration="1500">
+    <div class="container">
+      <h2 class="text-center mb-5">Sobre Nosotros</h2>
+      <h3 class="text-center mb-5">Infórmate un poco más acerca de la organización que hace de tus productos los mejores.</h3>
+      <div class="row text-center">
+        <div class="col-md-4 persona">
+          <img src="image/sobre_nosotros/dir_gen.png" alt="Persona 1">
+          <div class="info-persona">
+            <h3>PABLO PEREZ</h3>
+            <p>Director General</p>
+          </div>
+        </div>
+        <div class="col-md-4 persona">
+          <img src="image/sobre_nosotros/dir_mar.png" alt="Persona 2">
+          <div class="info-persona">
+            <h3>ALAN ALI</h3>
+            <p>Director de Marketing</p>
+          </div>
+        </div>
+        <div class="col-md-4 persona">
+          <img src="image/sobre_nosotros/dir_prod.png" alt="Persona 3">
+          <div class="info-persona">
+            <h3>Cesar Perales</h3>
+            <p>Director de Producción</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white py-4 footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Compañía</h3>
+          <p>Nos encargamos de la producción y comercialización de mochilas innovadoras.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Servicios</h3>
+          <ul class="list-unstyled">
+            <li>Información</li>
+            <li>Pedidos</li>
+            <li>Reserva</li>
+            <li>Logística</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><img src="image/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="image/correo.png" alt="Correo"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Contáctanos</h3>
+          <p>📍 Zona Alto Tejar / Determino Echazú Nº 1585</p>
+          <p>📞 70695192</p>
+          <p>✉️ demenqui@dmq.gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p><span class="color-red">©2024 DEVYID</span> COPYRIGHT ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

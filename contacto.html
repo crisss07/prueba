@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demenqui - Mochilas con Energía Renovable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-contacto.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">
+        <img src="image/demenqui.png" alt="Demenuqi" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-baseline">
+          <li class="nav-item px-3"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="productos.html">Productos</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="tecnologia.html">Tecnología</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+          <li class="nav-item px-3"><a class="nav-link text-green" href="contacto.html">Servicio al Cliente</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- cuadros -->
+   <!-- Slider -->
+ <header class="hero">
+    <div class="overlay">
+      <div class="container text-center text-white">
+        <h3>¿Aún te quedan algunas preguntas?</h3>
+        <h1>CONTÁCTANOS</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- iconos flotantes -->
+  <div class="social-icons">
+      <a href="#"><img src="image/facebook_verde.png" alt="Facebook"></a>
+      <a href="#"><img src="image/x_verde.png" alt="Twitter"></a>
+      <a href="#"><img src="image/whatsapp_verde.png" alt="WhatsApp"></a>
+  </div>
+<!-- seccion mochilas tactivas -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="card-group">
+        <div class="card" style="background-color: #b7bdd1; text-align: center; padding: 85px 0;">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-6">
+                <h3>Contáctenos</h3>
+                <p>Póngase en contacto con nosotros para una cotización. Ayuda o para unirte al equipo.</p>
+              </div>
+              <div class="col-6 col-sm-6">
+                <img src="image/correo.png" width="50">
+                <h3>Correo electrónico:</h3>
+                <p>
+                  <a href="mailto:demenqui@dmq.gmail.com" class="email-link">demenqui@dmq.gmail.com</a>
+                </p>
+              </div>
+
+              <!-- Force next columns to break to new line at md breakpoint and up -->
+              <div class="w-100 d-none d-md-block"></div>
+
+              <div class="col-6 col-sm-6">
+                <img src="image/whatsapp.png" width="50">
+                <h3>Celular:</h3>
+                <p>70695192</p>
+              </div>
+              <div class="col-6 col-sm-6">
+                <img src="image/instagram.png" width="50">
+                <h3>Instagram:</h3>
+                <p>@demenqui</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d239.0959059465434!2d-68.15553915903308!3d-16.499092326943007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sZona%20Alto%20Tejar%20%2F%20Determino%20Echaz%C3%BA%20N%C2%BA%201585!5e0!3m2!1ses-419!2sbo!4v1730774257270!5m2!1ses-419!2sbo" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" style="background-image: url('image/contacto/form.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  ">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="card-group">
+        <div class="card" style="padding: 10%; background-color: rgba(255, 255, 255, 0.9);">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12">
+                <!-- <form action="procesar_formulario.php" method="post"> -->
+                <form>
+                  <h2>Formulario de contacto</h2>
+                  <div class="mb-3">
+                      <label for="correo" class="form-label">Correo Electrónico</label>
+                      <input type="email" name="correo" class="form-control" id="correo" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea name="mensaje" class="form-control" id="mensaje" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="text-white py-4 footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Compañía</h3>
+          <p>Nos encargamos de la producción y comercialización de mochilas innovadoras.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Servicios</h3>
+          <ul class="list-unstyled">
+            <li>Información</li>
+            <li>Pedidos</li>
+            <li>Reserva</li>
+            <li>Logística</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><img src="image/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="image/correo.png" alt="Correo"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Contáctanos</h3>
+          <p>📍 Zona Alto Tejar / Determino Echazú Nº 1585</p>
+          <p>📞 70695192</p>
+          <p>✉️ demenqui@dmq.gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p><span class="color-red">©2024 DEVYID</span> COPYRIGHT ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

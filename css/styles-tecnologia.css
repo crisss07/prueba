@@ -1,0 +1,37 @@
+.hero-section {
+  height: 60vh;
+  background-image: url('../image/portada_productos.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.features-section .card {
+  border-radius: 15px;
+  transform: translateY(-40%);
+}
+
+.features-section .card i {
+  color: #6c757d;
+}
+
+.img-fluid-iconos{
+  width: 50%;
+}
+
+.testimonial-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card small {
+  display: block;
+  margin-top: 1rem;
+  border-top: 1px solid #dee2e6;
+  padding-top: 0.5rem;
+}
+
+section h2 {
+  color: #333;
+}
+

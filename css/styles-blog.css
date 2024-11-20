@@ -1,0 +1,150 @@
+/*pagina nosotros*/
+.hero {
+  background: url('../image/blog.jpg');
+/*  height: 100vh;*/
+  height: 800px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay para oscurecer el video */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.company-section {
+      background: linear-gradient(to right, #f8f9fa, #f3f4fc);
+      padding: 50px 0;
+    }
+.company-image {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.signature {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+    }
+
+  /*section-espacios*/
+.section-espacios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre las líneas y el texto */
+}
+
+.line {
+  width: 100px;  /* Ajusta el tamaño de la línea */
+  height: 5px;    /* Altura de la línea */
+  background-color: #5bc266; /* Color verde */
+}
+
+/*css del flip*/
+.flip-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card-back {
+    background-color: #f8f9fa;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*otra seccion*/
+.image-container img {
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Para una transición suave */
+}
+
+.info-card:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para resaltar */
+    transform: scale(1.02); /* Escala el card un poco para un efecto visual extra */
+    cursor: pointer; /* Cambia el cursor al ícono de mano */
+}
+
+
+.info-card h5 {
+    font-weight: bold;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.more-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
